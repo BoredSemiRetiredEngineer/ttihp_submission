@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+silly2 creates divide by 2 clk signals, silly1 allows user to pick which signals get outputed.
 
 ## How to test
 
-Explain how to use your project
+Apply various signals onto the inputs and see what comes out the outputs. Outputs should be the 
+appropriately divide by 2 clock.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Use FPGA to drive and read signal outputs.
