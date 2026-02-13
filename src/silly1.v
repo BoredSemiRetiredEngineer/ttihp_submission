@@ -49,7 +49,7 @@ assign uo_out = output_signal;
    // Operations Module
     silly2 silly2(.clk(clk), .rst_n(rst_n), .signal_gen_out(signal_gen_in));
 
-always @(posedge clk ) begin
+always @(posedge clk or posedge reset) begin
     if (reset) begin
         signal_mask <= 0;
     end else begin
