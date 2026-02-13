@@ -63,56 +63,56 @@ module silly2 (
     assign signal_gen_out[7] = clk_div256;
 
 
-always @(posedge clk or reset) begin
+always @(posedge clk or posedge reset) begin
     if (reset) begin
         clk_div2 <= 0;
     end else begin
         clk_div2 <= ~clk_div2;
     end
 end
-always @(posedge clk_div2 or reset) begin
+always @(posedge clk_div2 or posedge reset) begin
     if (reset) begin
         clk_div4 <= 0;
     end else begin
         clk_div4 <= ~clk_div4;
     end
 end
-always @(posedge clk_div4 or reset) begin
+always @(posedge clk_div4 or posedge reset) begin
     if (reset) begin
         clk_div8 <= 0;
     end else begin
         clk_div8 <= ~clk_div8;
     end
 end
-always @(posedge clk_div8 or reset) begin
+always @(posedge clk_div8 or posedge reset) begin
     if (reset) begin
         clk_div16 <= 0;
     end else begin
         clk_div16 <= ~clk_div16;
     end
 end
-always @(posedge clk_div16 or reset) begin
+always @(posedge clk_div16 or posedge reset) begin
     if (reset) begin
         clk_div32 <= 0;
     end else begin
         clk_div32 <= ~clk_div32;
     end
 end
-always @(posedge clk_div32 or reset ) begin
+always @(posedge clk_div32 or posedge reset ) begin
     if (reset) begin
         clk_div64 <= 0;
     end else begin
         clk_div64 <= ~clk_div64;
     end
 end
-always @(posedge clk_div64 or reset) begin
+always @(posedge clk_div64 or posedge reset) begin
     if (reset) begin
         clk_div128 <= 0;
     end else begin
         clk_div128 <= ~clk_div128;
     end
 end
-always @(posedge clk_div128 or reset) begin
+always @(posedge clk_div128 or posedge reset) begin
     if (reset) begin
         clk_div256 <= 0;
     end else begin
@@ -120,10 +120,11 @@ always @(posedge clk_div128 or reset) begin
     end
 end
 
+/*
 initial begin
 	$dumpfile("dump_silly2.vcd");
 	$dumpvars(1, silly2);
 end
-
+*/
 endmodule
 

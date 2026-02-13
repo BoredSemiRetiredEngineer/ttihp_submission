@@ -37,7 +37,7 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 1
+    assert dut.uo_out[0].value == 0
     
     assert dut.ui_in[1].value == 1
     assert dut.uo_out[1].value == 1
@@ -73,10 +73,10 @@ async def test_project(dut):
     # Change it to match the actual expected output of your module:
     
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 1
+    assert dut.uo_out[1].value == 0
     
     assert dut.ui_in[2].value == 1
     assert dut.uo_out[2].value == 1
@@ -102,13 +102,13 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 0
+    assert dut.uo_out[1].value == 1
     
     assert dut.ui_in[2].value == 1
-    assert dut.uo_out[2].value == 1
+    assert dut.uo_out[2].value == 0
     
     assert dut.ui_in[3].value == 1
     assert dut.uo_out[3].value == 0
@@ -131,25 +131,25 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 0
+    assert dut.uo_out[1].value == 1
     
     assert dut.ui_in[2].value == 1
-    assert dut.uo_out[2].value == 0
+    assert dut.uo_out[2].value == 1
     
     assert dut.ui_in[3].value == 1
-    assert dut.uo_out[3].value == 0
+    assert dut.uo_out[3].value == 1
     
     assert dut.ui_in[4].value == 1
-    assert dut.uo_out[4].value == 0
+    assert dut.uo_out[4].value == 1
     
     assert dut.ui_in[5].value == 1
-    assert dut.uo_out[5].value == 0
+    assert dut.uo_out[5].value == 1
     
     assert dut.ui_in[6].value == 1
-    assert dut.uo_out[6].value == 1
+    assert dut.uo_out[6].value == 0
     
     assert dut.ui_in[7].value == 1
     assert dut.uo_out[7].value == 1
@@ -160,28 +160,28 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 0
+    assert dut.uo_out[1].value == 1
     
     assert dut.ui_in[2].value == 1
-    assert dut.uo_out[2].value == 0
+    assert dut.uo_out[2].value == 1
     
     assert dut.ui_in[3].value == 1
-    assert dut.uo_out[3].value == 0
+    assert dut.uo_out[3].value == 1
     
     assert dut.ui_in[4].value == 1
-    assert dut.uo_out[4].value == 0
+    assert dut.uo_out[4].value == 1
     
     assert dut.ui_in[5].value == 1
-    assert dut.uo_out[5].value == 0
+    assert dut.uo_out[5].value == 1
     
     assert dut.ui_in[6].value == 1
-    assert dut.uo_out[6].value == 0
+    assert dut.uo_out[6].value == 1
     
     assert dut.ui_in[7].value == 1
-    assert dut.uo_out[7].value == 1
+    assert dut.uo_out[7].value == 0
     
     # Wait for  clock cycle to see the output values
     await ClockCycles(dut.clk, 33)
@@ -189,7 +189,7 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 1
+    assert dut.uo_out[0].value == 0
     
     assert dut.ui_in[1].value == 1
     assert dut.uo_out[1].value == 1
@@ -219,10 +219,10 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 1
+    assert dut.uo_out[1].value == 0
     
     assert dut.ui_in[2].value == 1
     assert dut.uo_out[2].value == 1
@@ -248,13 +248,13 @@ async def test_project(dut):
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
     assert dut.ui_in[0].value == 1
-    assert dut.uo_out[0].value == 0
+    assert dut.uo_out[0].value == 1
     
     assert dut.ui_in[1].value == 1
-    assert dut.uo_out[1].value == 0
+    assert dut.uo_out[1].value == 1
     
     assert dut.ui_in[2].value == 1
-    assert dut.uo_out[2].value == 1
+    assert dut.uo_out[2].value == 0
     
     assert dut.ui_in[3].value == 1
     assert dut.uo_out[3].value == 1

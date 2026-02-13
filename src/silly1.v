@@ -59,9 +59,10 @@ always @(posedge clk ) begin
     end
 end
 
+/*
 initial begin
 	$dumpfile("dump_silly1.vcd");
 	$dumpvars(1, silly1);
 end
-
+*/
 endmodule
