@@ -17,6 +17,7 @@ module tt_um_jamesbuchanan_silly (
 );
 
     assign uio_oe = 8'b0000_0000;
+    assign uio_out = 8'b0000_0000;
 
 silly1 silly1 (  
     .clk(clk),
